@@ -51,7 +51,8 @@ namespace Assigment1.Controllers
         [HttpGet("get/delegate/{message}")]
         public List<Lesson> ShowExample(int message)
         {
-             return DelegateMethod(message);
+             Del handler =  DelegateMethod;
+             return handler(message);  
                 
         }
         
